@@ -21,6 +21,10 @@ Ensure you have the following installed on your system:
    cd your-repository
 ---
 
+2. **Initialise the repository**
+   ```bash
+     npm install
+---
 ## 🧪 Running Tests
 
 1. **Run Tests**
