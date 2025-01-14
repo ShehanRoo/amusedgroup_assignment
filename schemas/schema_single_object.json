@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Single Item Details",
+    "description": "Schema for the object with ID",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier for the object"
+      },
+      "name": {
+        "type": "string",
+        "description": "Name of the object"
+      },
+      "data": {
+        "type": ["object", "null"],
+        "description": "Additional properties of the object (can be an object or null)"
+      }
+    },
+    "required": ["id", "name", "data"],
+    "additionalProperties": false
+  }
+  

@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "All Items Details",
+    "type": "array",
+    "description": "Schema for the array response from https://api.restful-api.dev/objects",
+    "items": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9]+$",
+          "description": "Unique identifier for the object"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object"
+        },
+        "data": {
+          "type": ["object", "null"],
+          "description": "Additional properties of the object (can be an object or null)"
+        }
+      },
+      "required": ["id", "name", "data"],
+      "additionalProperties": false
+    }
+  }
+  
